@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Datos Personales</string>
+    <string name="nombre">Nombre:</string>
+    <string name="apellidos">Apellidos:</string>
+    <string name="edad">Edad:</string>
+    <string name="genero">Género:</string>
+    <string name="estado">Estado civil:</string>
+    <string name="hijos">¿Tiene hijos?</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string-array name="estados">
+        <item>Seleccione un estado</item>
+        <item>solter@</item>
+        <item>casad@</item>
+        <item>viud@</item>
+        <item>separad@</item>
+        <item>otr@</item>
+    </string-array>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="notificar">Notificar</string>
+    <string name="reset">Reset</string>
+</resources>

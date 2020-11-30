@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/lblNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblNombre"
+        app:layout_constraintTop_toTopOf="@+id/lblNombre" />
+
+    <EditText
+        android:id="@+id/txtApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/lblApellidos"
+        app:layout_constraintEnd_toEndOf="@+id/txtNombre"
+        app:layout_constraintStart_toStartOf="@+id/txtNombre"
+        app:layout_constraintTop_toTopOf="@+id/lblApellidos" />
+
+    <TextView
+        android:id="@+id/lblApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/apellidos"
+        app:layout_constraintEnd_toEndOf="@+id/lblNombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblNombre"
+        app:layout_constraintTop_toBottomOf="@+id/lblNombre" />
+
+    <TextView
+        android:id="@+id/lblEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/edad"
+        app:layout_constraintEnd_toEndOf="@+id/lblApellidos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblApellidos"
+        app:layout_constraintTop_toBottomOf="@+id/lblApellidos" />
+
+    <EditText
+        android:id="@+id/txtNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/lblEdad"
+        app:layout_constraintEnd_toEndOf="@+id/txtApellidos"
+        app:layout_constraintStart_toStartOf="@+id/txtApellidos"
+        app:layout_constraintTop_toTopOf="@+id/lblEdad" />
+
+    <TextView
+        android:id="@+id/lblGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/genero"
+        app:layout_constraintEnd_toEndOf="@+id/lblEdad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblEdad"
+        app:layout_constraintTop_toBottomOf="@+id/lblEdad" />
+
+    <TextView
+        android:id="@+id/lblEstadoCivil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/estado"
+        app:layout_constraintEnd_toEndOf="@+id/lblGenero"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblGenero"
+        app:layout_constraintTop_toBottomOf="@+id/lblGenero" />
+
+    <Spinner
+        android:id="@+id/selectEstado"
+        android:layout_width="205dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblEstadoCivil"
+        app:layout_constraintEnd_toEndOf="@+id/checkGenero"
+        app:layout_constraintStart_toStartOf="@+id/checkGenero"
+        app:layout_constraintTop_toTopOf="@+id/lblEstadoCivil" />
+
+    <TextView
+        android:id="@+id/lblHijos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/hijos"
+        app:layout_constraintEnd_toEndOf="@+id/lblEstadoCivil"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lblEstadoCivil"
+        app:layout_constraintTop_toBottomOf="@+id/lblEstadoCivil" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNotificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toEndOf="@+id/btnNotificar"
+        app:layout_constraintTop_toTopOf="@+id/btnNotificar" />
+
+    <TextView
+        android:id="@+id/lblEtiqueta"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblHijos" />
+
+    <Button
+        android:id="@+id/btnNotificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/notificar"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toStartOf="@+id/btnReset"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEtiqueta" />
+
+    <Switch
+        android:id="@+id/switchHijos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no"
+        app:layout_constraintBottom_toBottomOf="@+id/lblHijos"
+        app:layout_constraintEnd_toEndOf="@+id/selectEstado"
+        app:layout_constraintStart_toStartOf="@+id/selectEstado"
+        app:layout_constraintTop_toTopOf="@+id/lblHijos" />
+
+    <RadioGroup
+        android:id="@+id/checkGenero"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/lblGenero"
+        app:layout_constraintEnd_toEndOf="@+id/txtNumero"
+        app:layout_constraintStart_toStartOf="@+id/txtNumero"
+        app:layout_constraintTop_toTopOf="@+id/lblGenero">
+
+        <RadioButton
+            android:id="@+id/radioHombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:checked="false"
+            android:text="@string/hombre" />
+
+        <RadioButton
+            android:id="@+id/radioMujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/mujer" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/btnUK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSpain"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_uk_spain" />
+
+    <ImageButton
+        android:id="@+id/btnSpain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btnUK"
+        app:layout_constraintEnd_toStartOf="@+id/btnUK"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnUK"
+        app:srcCompat="@drawable/ic_ico_spain" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

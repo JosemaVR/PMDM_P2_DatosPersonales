@@ -1,0 +1,23 @@
+<resources>
+    <string name = "app_name"> Personal Data </string>
+    <string name = "nombre"> Name: </string>
+    <string name = "apellidos"> Surname: </string>
+    <string name = "edad"> Age: </string>
+    <string name = "genero"> Gender: </string>
+    <string name = "estado"> Marital status: </string>
+    <string name = "hijos"> Do you have children? </string>
+    <string name = "hombre"> Man </string>
+    <string name = "mujer"> Woman </string>
+    <string-array name = "estados">
+        <item>Select a status</item>
+        <item>single</item>
+        <item>married</item>
+        <item>widow</item>
+        <item>separate</item>
+        <item>other</item>
+    </string-array>
+    <string name = "si"> Yes </string>
+    <string name = "no"> No </string>
+    <string name = "notificar"> Notify </string>
+    <string name = "reset"> Reset </string>
+</resources>
