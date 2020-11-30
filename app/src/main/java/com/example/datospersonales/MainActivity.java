@@ -123,8 +123,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             res = apellidos.getText() + ", " + nombre.getText() + ", " + edad + ", " + genero
                     + " " + spinner.getSelectedItem() + " y " + padre;
+            Toast.makeText(this, res, Toast.LENGTH_LONG).show();
+            res = "";
         }
         etiqueta.setText(res);
+        etiqueta.setTextColor(getResources().getColor(R.color.red));
     }
 
     private void vaciar() {
