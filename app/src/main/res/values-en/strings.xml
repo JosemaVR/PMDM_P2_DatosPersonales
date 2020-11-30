@@ -20,4 +20,7 @@
     <string name = "no"> No </string>
     <string name = "notificar"> Notify </string>
     <string name = "reset"> Reset </string>
+    <string name = "holderNombre"> Enter your name </string>
+    <string name = "holderApellido"> Enter your last name </string>
+    <string name = "holderNumero"> Enter your age </string>
 </resources>
